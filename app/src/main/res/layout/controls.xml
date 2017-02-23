@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/controls"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/controls_bg"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:rotation="180"
+        android:background="@drawable/controls_bg"/>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btnRew"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/btnPlay"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@id/btnPlay"
+        android:background="@drawable/left"
+        android:padding="5dp" />
+
+
+
+    <Button
+        android:id="@+id/btnFwd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/btnPlay"
+        android:background="@drawable/left"
+        android:rotation="180"
+        android:padding="5dp" />
+
+
+
+
+    <Button
+        android:id="@+id/btnFullScreen"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/full_screen" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            tools:text="00:00" />
+
+
+        <TextView
+            android:id="@+id/txtTotalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            tools:text="00:00" />
+
+        <SeekBar
+            android:layout_centerVertical="true"
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/txtTime"
+            android:layout_toLeftOf="@id/txtTotalTime"
+            android:layout_toRightOf="@id/txtTime"
+            android:layout_toStartOf="@id/txtTotalTime" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleVideoPlayer">
+        <attr name="controlsBackgroundColor" format="color" />
+        <attr name="controlsColor" format="color" />
+        <attr name="thumbnailDrawable" format="reference" />
+
+        <attr name="allowFullScreen" format="boolean" />
+
+
+        <attr name="hideControlsAtMillis" format="integer" />
+        <attr name="autoPlayOnLoad" format="boolean" />
+        <attr name="videoUrl" format="string" />
+
+        <attr name="fullScreenRotation" format="enum">
+            <enum name="landscape_sensor" value="0" />
+            <enum name="landscape_left" value="90" />
+            <enum name="landscape_right" value="-90" />
+        </attr>
+
+    </declare-styleable>
+</resources>
